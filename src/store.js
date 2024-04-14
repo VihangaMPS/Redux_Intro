@@ -14,6 +14,7 @@ import {configureStore} from "@reduxjs/toolkit";
 //Redux Config
 const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__((applyMiddleware(thunk))));*/
 
+//Using Modern Redux Toolkit
 const store = configureStore({
     reducer: {
         account: accountReducer,
