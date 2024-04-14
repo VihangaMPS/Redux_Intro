@@ -9,8 +9,9 @@ const rootReducer = combineReducers({
     customer: customerReducer
 })
 
+
 //Redux Config
-const store = createStore(rootReducer, applyMiddleware(thunk));
+const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__((applyMiddleware(thunk))));
 
 export default store; 
 
